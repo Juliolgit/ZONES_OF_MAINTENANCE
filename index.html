@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Comunas – Región Metropolitana</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="vendor/leaflet.css" />
+
+  <!-- Local styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>🗺️ Zonas de Mantención</h1>
+      <p>Mapa de Comunas — Región Metropolitana de Santiago, Chile</p>
+    </div>
+  </header>
+
+  <!-- Search -->
+  <div id="search-box">
+    <input
+      id="search-input"
+      type="text"
+      placeholder="Buscar comuna…"
+      autocomplete="off"
+    />
+    <button id="search-btn">Buscar</button>
+  </div>
+  <div id="search-results"></div>
+
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="vendor/leaflet.js"></script>
+
+  <!-- App -->
+  <script src="app.js"></script>
+</body>
+</html>
